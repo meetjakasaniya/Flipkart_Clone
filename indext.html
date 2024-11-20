@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart.com</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .navBar {
+            width: 100%;
+            height: 56px;
+            background-color: #dbdbdb;
+            color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: black;
+        }
+        .logoSection {
+            width: 80px;
+            display: inline;
+            margin: 2px 0px 2px 170px;
+        }
+        .flipkart-logo {
+            width: 75px;
+            height: 20.11px;
+            margin-top: 15px;
+        }
+        .logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 11px;
+            font-style: italic;
+            width: 75px;
+            height: 15.4px;
+            margin-bottom: 15px;
+        }
+        #plus {
+            color: #ffe500;
+            font-size: 11px;
+        }
+        .searchBox {
+            width: 340px;
+            display: flex;
+            margin-right: 10px;
+        }
+       .input {
+            height: 36px;
+            width: 564px;
+            border-radius: 5px;
+            padding: 0 16px;
+            border-radius: 2px 0 0 2px;
+            border: 0;
+            outline: 0 none;
+
+        }
+        .search-logo {
+            height: 36px;
+            width: 44px;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+            cursor: pointer;
+            padding: 4px 12px 2px 8px;
+            background-color: #fff;
+            border: 0;
+            outline: 0 none;
+            color: #2874f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .loginBox {
+            margin-right: 10px;
+        }
+        .login {
+            color: #2874f0;
+            background-color: #fff;
+            cursor: pointer;
+            border-radius: 2px;
+            height: 32px;
+            padding: 5px 40px;
+            border: 1px solid #dbdbdb;
+        }
+        .becomeSellerBox {
+            width: 155px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .moreBox {
+            width: 50px;
+            margin-right: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        .cartBox {
+            width: 65px;
+            margin-right: 150px;
+            align-items: center;
+            justify-content: center;
+        }
+       .belowNavBar {
+            height: 125px;
+            width: 700px;
+            display: flex;
+            max-width: 1280px;
+            color: #212121;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .smallCard {
+            width: 94px;
+            height: 112px;
+            padding: 10px;
+            margin: 0px 20px;
+        }
+        .card {
+            height: 64px;
+            width: 64px;
+        }
+        .smallCard p {
+            text-align: center;
+        }
+      .heroSection {
+            background-image: url('images/heroImg.png');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1680px;
+            height: 280px;
+        }
+        .itemSection {
+            max-width: 1434px;
+            height: 314px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .item {
+            width: 232px;
+            height: 314px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .itemImg {
+            height: 200px;
+        }
+        .itemDescription {
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 15px;
+            text-align: center;
+        }
+        .buyNowText {
+            color: #388e3c;
+            padding-top: 8px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .itemHeadName {
+            word-wrap: break-word;
+            font-size: 30px;
+            line-height: 1.38;
+            color: #2e2e2e;
+            text-align: center;
+
+        }
+        .viewAllSection {
+            margin-top: 24px;
+            text-align: center;
+        }
+       .viewAllButton {
+            background: #2874f0;
+            color: #fff;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+            border: none;
+            height: 38px;
+            width: 96px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .viewAllText {
+            font-size: 13px;
+
+        }
+        .line {
+            width: 100%;
+            border: none;
+            border-top: 8px solid rgba(213, 207, 207, 0.617);
+        }
+        .mobileimage {
+            width: 100%;
+            height: 350px;
+        }
+        .footerExtras {
+            margin-top: 0.35px;
+            background-color: #172337;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            max-width: 1719px;
+            height: 70px;
+            color: #ffffff;
+            font-size: 14px;
+            line-height: 2;
+            padding-left: 25px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navBar">
+            <div class="logoSection">
+                <div>
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg   "
+                        class="flipkart-logo" alt="flipkart-logo" />
+                </div>
+                <div>
+                    <p class="logo-text">Explore <span id="plus">Plus+</span></p>
+                </div>
+            </div>
+            <div class="searchBox">
+                <input class="input" type="text" placeholder="Search for products, brands and more" />
+                <div class="search-logo">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="loginBox">
+                <div class="login">Login</div>
+            </div>
+            <div class="moreBox">
+                <p>More</p>
+            </div>
+            <div class="becomeSellerBox">
+                <p>Become a Seller</p>
+            </div>
+            <div class="cartBox">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+        </div>
+    </header>
+    <div class="belowNavBar">
+        <div class="smallCard">
+            <img src="https://rukminim1.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" alt="menuIcon1"
+                class="card">
+            <p>Grocery</p>
+        </div>
+        <div class="smallCard">
+            <img src="https://rukminim1.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100" alt="menuIcon1"
+                class="card">
+            <p>Mobiles</p>
+        </div>
+        <div class="smallCard">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/0d75b34f7d8fbcb3.png?q=100" alt="menuIcon1"
+                class="card">
+            <p>Fashion</p>
+        </div>
+        <div class="smallCard">
+            <img src="https://rukminim1.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100" alt="menuIcon1"
+                class="card">
+            <p>Laptops</p>
+        </div>
+        <div class="smallCard">
+            <img src="https://rukminim1.flixcart.com/flap/64/64/image/ab7e2b022a4587dd.jpg?q=100" alt="menuIcon1"
+                class="card">
+            <p>Home & Furniture</p>
+        </div>
+        <div class="smallCard">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/0139228b2f7eb413.jpg?q=100" alt="menuIcon1"
+                class="card">
+            <p>Appliances</p>
+        </div>
+        <div class="smallCard">
+            <img src="https://rukminim1.flixcart.com/flap/64/64/image/71050627a56b4693.png?q=100" alt="menuIcon1"
+                class="card">
+            <p>Flighs Booking</p>
+        </div>
+        <div class="smallCard">
+            <img src="https://rukminim1.flixcart.com/flap/64/64/image/dff3f7adcf3a90c6.png?q=100" alt="menuIcon1"
+                class="card">
+            <p>Beauty, Toys</p>
+        </div>
+        <div class="smallCard">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/05d708653beff580.png?q=100" alt="menuIcon1"
+                class="card">
+            <p>Two Wheelers </p>
+        </div>
+    </div>
+    <div class="line">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/ce9cf03dca79e5be.jpg?q=20" alt=""
+            class="mobileimage">
+    </div>
+    <div class="line"></div>
+    <div class="itemSection">
+        <div class="item">
+            <div class="itemHeadName">
+                <p>Best of Fashion</p>
+            </div>
+            <div class="viewAllSection">
+                <div class="viewAllButton">
+                    <p class="viewAllText">VIEW ALL</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/t/d/2/m-half-carnival-one-nb-nicky-boy-original-imah3bjxmaqnwbte.jpeg?q=70   "
+                alt="electronic img" class="itemImg">
+            <p class="itemDescription">Men's T-shirt</p>
+            <p class="buyNowText">Buy Now</p>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/612/612/jvv9zm80/sweatshirt/g/h/z/xxl-4453178-hrx-by-hrithik-roshan-original-imafgzseazfuzhpg.jpeg?q=70"
+                alt="electronic img" class="itemImg">
+            <p class="itemDescription">Men's Sweater</p>
+            <p class="buyNowText">Buy Now</p>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/track-suit/i/4/j/m-bblrnful-z91-tbljog-j35-dp-tracksuit-blive-original-imah29pey3nf7aaf.jpeg?q=70"
+                alt="electronic img" class="itemImg">
+            <p class="itemDescription">Men's Trackshut</p>
+            <p class="buyNowText">Buy Now</p>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/jacket/8/e/v/xl-no-hoc-mf-bom-jkt-23-navy-blue-houseofcommon-original-imah44c7rf2ycbmf.jpeg?q=70"
+                alt="electronic img" class="itemImg">
+            <p class="itemDescription">Jackets</p>
+            <p class="buyNowText">Buy Now</p>
+        </div>
+    </div>
+    <div class="line"></div>    
+    <div class="itemSection">
+        <div class="item">
+            <div class="itemHeadName">
+                <p>Best of Electronic</p>
+            </div>
+            <div class="viewAllSection">
+                <div class="viewAllButton">
+                    <p class="viewAllText">VIEW ALL</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/q/m/s/-original-imah3zvdthupfejc.jpeg?q=70"
+                alt="cloth1" class="itemImg">
+            <p class="itemDescription">Earbuds</p>
+            <p class="buyNowText">Buy Now</p>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/i/4/b/-original-imah2thy4cphhcbe.jpeg?q=70"
+                alt="cloth2" class="itemImg">
+            <p class="itemDescription">Smart Watch</p>
+            <p class="buyNowText">Buy Now</p>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/j/4/7/-original-imah44yrqjkpckgv.jpeg?q=70"
+                alt="cloth3" class="itemImg">
+            <p class="itemDescription">Vivo T3 Pro</p>
+            <p class="buyNowText">Buy Now</p>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/k/2/u/-original-imah3zzjkjwumecn.jpeg?q=70"
+                alt="cloth4" class="itemImg">
+            <p class="itemDescription">Acer Gaming Laptop</p>
+            <p class="buyNowText">Buy Now</p>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="itemSection">
+        <div class="item">
+            <div class="itemHeadName">
+                <p>Top Deals for Today</p>
+            </div>
+            <div class="viewAllSection">
+                <div class="viewAllButton">
+                    <p class="viewAllText">VIEW ALL</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/cycle/v/y/d/viper-28t-rigid-suspension-dual-disc-shimano-gear-8-15-years-28-original-imah2yfexrc4qgzp.jpeg?q=70"
+                alt="topDeal" class="itemImg">
+            <p class="itemDescription">Cycle</p>
+            <p class="buyNowText">Buy Now</p>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/projector/i/6/u/i9-pro-10-ei9027-led-projector-egate-original-imah3tzkr5jkzhyq.jpeg?q=70"
+                alt="topDeal" class="itemImg">
+            <p class="itemDescription">Projector</p>
+            <p class="buyNowText">Buy Now</p>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bottle/5/g/a/1000-isi-certified-double-wall-water-bottle-24-hours-hot-cold-1-original-imahfvdmxjzhxsgd.jpeg?q=70"
+                alt="topDeal" class="itemImg">
+            <p class="itemDescription">Water Bottel</p>
+            <p class="buyNowText">Buy Now</p>
+        </div>
+        <div class="item">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/stuffed-toy/f/f/y/plush-cute-crown-elephant-soft-toy-for-kids-20-cm-20-lattice-original-imah5xw7ybsr8wzy.jpeg?q=70"
+                alt="topDeal" class="itemImg">
+            <p class="itemDescription">Soft Toys</p>
+            <p class="buyNowText">Buy Now</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footerExtras">
+            <span><i class="fa-solid fa-suitcase" style="color: #ffe500;"></i> Become a Seller</span>
+            <span><i class="fa-solid fa-star" style="color: #ffe500;"></i> Advertise</span>
+            <span><i class="fa-solid fa-gift" style="color: #ffe500;"></i> Gift Cards</span>
+            <span><i class="fa-solid fa-circle-question" style="color: #ffe500;"></i> Help Center</span>
+            <span>© 2007-2023 Flipkart.com</span>
+            <span><img src="images/payment-method.svg" alt="payment-method"></span>
+
+        </div>
+    </footer>
+</body>
+</html>
